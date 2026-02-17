@@ -1,0 +1,45 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+@font-face {
+    font-family: toruk;
+    src: url(./torukscregular-z8ma1.ttf);
+}
+
+#one{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-image: url(./image-1920x1080.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+button{
+    color: rgb(0, 255, 234);
+    height: 40px;
+    width: 130px;
+    border-radius: 9px;
+    border: none;
+    background-color: grey;
+    font-family: toruk;
+}
+
+h1{
+    margin: 0;
+    color: #08adec;
+    font-family: toruk;
+    font-size: 50px;
+    padding: 40px 40px 0px 40px;
+}
+
+button:hover{
+    border: 3px solid aqua;
+}

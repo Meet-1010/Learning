@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: dots;
+    font-size: 200px;
+}
+
+@font-face {
+    font-family: dots;
+    src: url(./BitcountInk-VariableFont_CRSV\,ELSH\,ELXP\,SZP1\,SZP2\,XPN1\,XPN2\,YPN1\,YPN2\,slnt\,wght.ttf);
+}

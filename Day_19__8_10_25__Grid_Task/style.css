@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+
+@font-face {
+    font-family: neuethin;
+    src: url(./font/HelveticaNowDisplay-Regular.ttf);
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: neuethin;
+    background-color: black;
+}
+
+#main{
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    background-color: #021c3c;
+    display: grid;
+    grid-template-columns: 40% 20% 10% 30%;
+    grid-template-rows: 70% 15% 15%;
+
+    grid-template-areas: "nav nav nav right"
+                         "bottom_left bottom_right bottom_right right"
+                         "bottom_left bottom_right bottom_right right"
+    ;
+}
+
+#nav{
+    background-color:black;
+    grid-area: nav;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 10px;
+}
+
+#right{
+    background-color: beige;
+    grid-area: right;
+    border-radius: 10px;
+    background-image: url("./Gemini_Generated_Image_u44x5ou44x5ou44x.png");
+    background-size: cover;
+}
+
+#suit{
+    background-color: #f5efe6;
+    height: 60px;
+    width: 330px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    position: absolute;
+    left: 74%;
+    top: 85%;
+}
+
+#bottom_left{
+    background-color: blueviolet;
+    grid-area: bottom_left;
+    border-bottom-left-radius: 10px;
+}
+#bottom_right{
+    background-color: burlywood;
+    grid-area: bottom_right;
+    border-bottom-right-radius: 10px;
+    margin-right: 10px;
+}
+#mix{
+    background-color: chocolate;
+    grid-area: mix;
+    margin-right: 10px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+#navbar > a{
+    color: white;
+    text-decoration: none;
+}
+
+#navbar #logo{
+    height: 50px;
+    border-radius: 5px;
+}
+
+#navbar #cart{
+    height: 35px;
+}
+
+#inside{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#inright{
+    background-color: #f7f0e6;
+    height: 458px;
+    width: 80%;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#inleft{
+    background-color: #1a1e23;
+    height: 458px;
+    width: 20%;
+    margin: 0px 0px 10px 10px;
+    border-radius: 10px;
+}
+
+.tile{
+    background-color: #ffffff00;
+    height: 20px;
+    width: 90px;
+    padding: 10px;
+    font-size: 12px;
+    border: 2px solid #f5efe6;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all ease 0.4s;
+}
+
+.tile:hover{
+    background-color: #f5efe6;
+    color: #1a1e23;
+    border: 2px solid #1a1e23;
+}
+
+#inleft h3{
+    color: #f5efe6;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 30%;
+    left: -25px;
+}
+
+span{
+    color: red;
+}
+
+#inleft p{
+    color: #f5efe6;
+    font-weight: 100;
+    font-size: 13px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 49px;
+    top: 147px;
+}
+
+#in1{
+    transform: rotate(20deg);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+#in2{
+    transform: rotate(40deg);
+    position: absolute;
+    top: 60%;
+}#in3{
+    transform: rotate(-20deg);
+    position: absolute;
+    left: 5%;
+    top: 56%;
+}#in4{
+    transform: rotate(-40deg);
+    position: absolute;
+    left: 7%;
+    top: 62%;
+}#in5{
+    transform: rotate(-70deg);
+    position: absolute;
+    left: 9.4%;
+    top: 42%;
+}#in6{
+    transform: rotate(25deg);
+    position: absolute;
+    left: 7%;
+    top: 50%;
+}#in7{
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 6%;
+    top: 41%;
+}
+
+#cons1{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 80%;
+    margin-right: 10px;
+    text-align:left;
+}
+
+#cons1 > p{
+    font-family: neuethin;
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+#cons1 > h1{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 60px;
+    margin-left: 17%;
+    margin-bottom: 0%;
+}
+
+#cons1 > img{
+    height: 250px;
+    position: absolute;
+    top: 10%;
+    right: 37%;
+}
+
+#cons1 > h3{
+    font-size: 13px;
+    margin-left: 17%;
+}
+
+#shop{
+    height: 50px;
+    width: 180px;
+    margin-left: 17%;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: poppins;
+    background-color:#1a1e23;
+    color: #f7f0e6;
+    transition: all ease 0.3s;
+    font-size: 15px;
+}
+
+#shop:hover{
+    background-color: #f7f0e6;
+    color: #1a1e23;
+}
+
+#collecbtn{
+    height: 50px;
+    width: 180px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: poppins;
+    background-color: #1a1e23;
+    transition: all ease 0.3s;
+    color: #f7f0e6;
+    font-size: 15px;
+}
+
+#collecbtn:hover{
+    background-color: #f7f0e6;
+    color: #1a1e23;
+}
+
+#cons2{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 170px;
+}
+
+#cons2 > p{
+    font-family: poppins;
+    font-size: 18px;
+    position: absolute;
+    rotate: -90deg;
+    top: 28%;
+    left: 59%;
+}
+
+.circle{
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#c1{
+    top: 42%;
+    left: 62%;
+}
+
+#c2{
+    top: 47%;
+    left: 62%;
+}
+
+#c3{
+    top: 52%;
+    left: 62%;
+}
+
+#c4{
+    background-color: #ff411c;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 57.5%;
+    left: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+#bottom_left{
+    background-color: black;
+    padding: 2px 12px 10px 10px;
+}
+
+#showcase1{
+    background-color: #fecd04;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#bottom_right{
+    background-color: black;
+    padding: 2px 10px 10px 0px;
+}
+
+#showcase2{
+    background-color: #ff411c;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#cons2 {
+    position: relative;
+}
+
+.bg-pill {
+    position: absolute;
+    top: 42%;        /* adjust to match reference */
+    left: 59%;       /* adjust to match reference */
+    width: 78px;
+    height: 200px;
+
+    background: #ff411c;
+
+    /* real working capsule shape */
+    clip-path: inset(0 round 40px);
+
+    z-index: 0;
+}
+
+

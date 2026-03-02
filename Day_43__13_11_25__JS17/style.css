@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #111;
+}
+
+h1{
+    color: white;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+#btn{
+    background-color: beige;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+}

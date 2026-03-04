@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* 
+button{
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+} */
+
+
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+
